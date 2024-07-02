@@ -5,6 +5,17 @@ import { HiOutlineBookmark } from "react-icons/hi2";
 import { MdLocalMovies } from "react-icons/md";
 import { getMovies } from "../queries";
 
+interface Movie {
+  id: number;
+  name: string;
+  year: number;
+  backdrop: { url: string } | null;
+  poster: { url: string } | null;
+  description: string;
+  type: string;
+}
+
+
 export default async function page() {
   const request = await getMovies();
   console.log(request);
@@ -18,7 +29,7 @@ export default async function page() {
         <h1 className="text-white text-[24px]">Movies</h1>
         <div className="flex flex-wrap justify-between">
           {
-            request?.docs.map(({ id, name, year, backdrop, poster, description, type }) => {
+            request?.docs.map(({ id, name, year, backdrop, poster, description, type }:Movie) => {
               return (
                 <Link href='#' key={id}>
                   <div className="text-white flex flex-col flex-wrap  mb-4">
