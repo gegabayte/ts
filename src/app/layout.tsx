@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="uz">
       <body className='container bg-[#10141E] min-h-[100vh]'>
         <div className="container py-[32px] flex">
-          <div className="left_sidebar flex flex-col bg-[#161D2F] w-16 h-[800px] rounded-lg pt-[25px] mb-4 gap-4">
+          <div className="left_sidebar flex flex-col bg-[#161D2F] w-20 h-[800px] rounded-lg pt-[25px] mb-4 gap-4">
             <span style={{ color: '#FC4747', fontSize: '32px', margin: '0 auto', marginBottom: '30px' }}><AiFillCalendar /></span>
             {/* <img src={path} alt="" /> */}
             <Link style={{ marginBottom: '20px', color: '#5A698F', fontSize: '20px', margin: '0 auto' }} href={'/'}><AiTwotoneAppstore /></Link>
