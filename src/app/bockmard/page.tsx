@@ -7,12 +7,10 @@ interface DataItem {
   title: string;
   imageUrl: string;
 }
-
 const dataTwo: DataItem[] = [
   { id: 1, title: 'The Great Lands', imageUrl: 'https://picsum.photos/200/10' },
   { id: 2, title: 'The Diary', imageUrl: 'https://picsum.photos/200/20' },
   { id: 3, title: 'Earth’s Untouched', imageUrl: 'https://picsum.photos/200/30' },
-
 ];
 const data: DataItem[] = [
   { id: 1, title: 'The Great Lands', imageUrl: 'https://picsum.photos/200/120' },
@@ -25,7 +23,6 @@ const data: DataItem[] = [
   { id: 8, title: 'Below Echo', imageUrl: 'https://picsum.photos/200/70' },
   { id: 9, title: 'The Rockies', imageUrl: 'https://picsum.photos/200/80' },
 ];
-
 export default function page() {
   return (
     <section className="container py-[32px]">
